@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const HomePage = (params) => {
     return (
         <div>
@@ -11,7 +12,7 @@ const HomePage = (params) => {
                         <a href="/pricing">Pricing</a>
                     </div>
                     <div className="flex items-center">
-                        <a className="bg-blue-400 p-2 rounded text-white font-medium w-20 text-center" href="/login" style={{background:"#305CDE"}}>Login</a>
+                        <Link className="bg-blue-400 p-2 rounded text-white font-medium w-20 text-center" to="/login" style={{background:"#305CDE"}}>Login</Link>
                     </div>
                 </div>
             </header>
